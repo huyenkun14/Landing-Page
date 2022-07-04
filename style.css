@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+ 
+}
+
+.container {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #fff;
+}
+
+/* Header */
+header {
+    height: 60vh;
+    background: url(./images/header.jpg) no-repeat 50%;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* Nav */
+nav {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.social i{
+    padding: 20px 5px;
+}
+
+.phone {
+    display: flex;
+    color: #fff;
+    padding: 20px 5px;
+}
+
+.phone p {
+    font-size: 0.8rem;
+}
+
+.header-title {
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.header-title p {
+    text-decoration: underline;
+}
+
+.header-title h1 {
+    width: 80%;
+    margin: 20px 0 30px;
+    text-shadow: 2px 2px 1px rgb(8, 8, 8);
+    letter-spacing: 0.1rem;
+}
+
+.header-title h1 span {
+    font-weight: 300;
+}
+
+.header-title a {
+    padding: 10px;
+    color: #fff;
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-style: italic;
+    box-shadow: 10px 10px 5px rgb(8, 8, 8);
+    letter-spacing: 0.1rem;
+}
+
+.header-title a:hover {
+    box-shadow: none;
+}
+/*End Header */
+
+/* Service */
+.service {
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+.service h3 {
+    color: crimson;
+    margin-bottom: 5px;
+}
+.service h2 {
+    margin-bottom: 10px;
+}
+/*End Service */
+
+/* Section */
+section {
+    margin: 50px;
+}
+.content-box {
+    width: 100%;
+    padding: 30px 50px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-title span {
+    font-size: 1.8rem;
+    color: crimson;
+}
+.content-box p {
+    margin-top: 15px;
+    line-height: 25px;
+}
+/*End Section */
+
+/* About Us */
+.about {
+    background: url(./images/about.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.about-content {
+    padding-top: 80px;
+    margin: 0 50px 30px;
+}
+.about-content h4 {
+    color: rgb(139, 28, 100);
+}
+.about-content h1{
+    margin-top: 5px;
+    letter-spacing: 0.1rem;
+}
+.about-content p {
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.about-item {
+    margin: 30px 50px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col {
+    display: flex;
+    width: 45%;
+}
+.about-col-title {
+    margin-left: 5px;
+    font-size: 0.6rem;
+}
+.about-col-title h4 {
+    letter-spacing: 0.05rem;
+}
+.about-col-title p {
+    margin-top: 10px;
+    line-height: 20px;
+}
+/*End About Us */
+
+/* ===================RESPONSIVE================ */
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -30px;
+    }
+    .content-box {
+        width: 30%;
+        padding: 20px;
+    }
+    .header-title {
+        margin-top: 15vh;
+        width: 40%;
+    }
+}
