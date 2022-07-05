@@ -37,6 +37,10 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);;
 }
 
+.logo {
+    margin-top: 5px;
+}
+
 .social i{
     padding: 20px 5px;
 }
@@ -53,7 +57,7 @@ nav {
 
 .header-title {
     color: #ffffff;
-    margin-top: 50px;
+    margin-top: 10vh;
     margin-left: 50px;
 }
 
@@ -95,10 +99,12 @@ nav {
     text-align: center;
     letter-spacing: 0.1rem;
 }
+
 .service h3 {
     color: crimson;
     margin-bottom: 5px;
 }
+
 .service h2 {
     margin-bottom: 10px;
 }
@@ -108,16 +114,19 @@ nav {
 section {
     margin: 50px;
 }
+
 .content-box {
     width: 100%;
     padding: 30px 50px;
     margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .box-title span {
     font-size: 1.8rem;
     color: crimson;
 }
+
 .content-box p {
     margin-top: 15px;
     line-height: 25px;
@@ -130,59 +139,149 @@ section {
     background-size: cover;
     color: #fff;
 }
+
 .about-content {
     padding-top: 80px;
     margin: 0 50px 30px;
 }
+
 .about-content h4 {
     color: rgb(139, 28, 100);
 }
+
 .about-content h1{
     margin-top: 5px;
     letter-spacing: 0.1rem;
 }
+
 .about-content p {
     margin-top: 30px;
     line-height: 25px;
 }
 
 .about-item {
-    margin: 30px 50px;
-    padding-bottom: 80px;
+    margin: 30px 50px 50px;
     display: flex;
     justify-content: space-between;
 }
+
 .about-col {
     display: flex;
     width: 45%;
 }
+
 .about-col-title {
     margin-left: 5px;
     font-size: 0.6rem;
 }
+
 .about-col-title h4 {
     letter-spacing: 0.05rem;
 }
+
 .about-col-title p {
     margin-top: 10px;
     line-height: 20px;
 }
+
+.about-btn {
+    margin-left: 50px;
+    padding-bottom: 80px;
+}
+
+.about-btn a {
+    padding: 10px;
+    color: #fff;
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-style: italic;
+    box-shadow: 10px 10px 5px rgba(238, 237, 237, 0.5);
+    letter-spacing: 0.1rem;
+}
+
+.about-btn a:hover {
+    box-shadow: none;
+}
 /*End About Us */
+
+
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.form-item {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form .submit {
+    font-style: italic;
+    font-weight: 600;
+    margin: 30px 30%;
+    color: #fff;
+    background-color: crimson;
+    box-shadow: 10px 10px 5px rgba(8, 8, 8, 0.4);
+
+}
+
+form .submit:hover {
+    box-shadow: none;
+}
+
+/* End Contact */
+
+
 
 /* ===================RESPONSIVE================ */
 @media screen and (min-width: 768px) {
+    body {
+        width: 700px;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    header {
+        width: 100%;
+        height: 75vh;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .social i, .phone{
+        font-size: 1.2rem;
+    }
+
+    .header-title {
+        margin-top: 15vh;
+        width: 60%;
+    }
+
     .content {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: -30px;
     }
+
     .content-box {
         width: 30%;
         padding: 20px;
     }
-    .header-title {
-        margin-top: 15vh;
-        width: 40%;
+
+    form {
+        padding: 50px 150px
+    }
+
+    .form-item {
+        padding: 20px;
     }
 }
