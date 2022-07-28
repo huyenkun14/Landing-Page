@@ -125,11 +125,11 @@
 
     <!-- Form -->
     <div class="contact">
-        <form action="" method="post" name="dangky">
-            <input class="form-item" type="text" name="customer" placeholder="Name" >
+        <form action="userinformation.php" method="post" name="dangky">
+            <input class="form-item" type="text" name="nameuser" placeholder="Name" >
             <input class="form-item" type="text" name="phone" placeholder="Phone Number" >
             <input class="form-item" type="email" name="email" placeholder="E-Mail" >
-            <textarea class="form-item" name="message" id="note" cols="" rows="5" >Note...</textarea>
+            <textarea class="form-item" name="message" id="note" cols="" rows="5" placeholder="Note..." ></textarea>
             <input class="form-item submit" type="submit" name="submit" value="Send" >
         </form>
     </div>
@@ -138,3 +138,4 @@
 </body>
 
 </html>
+
